@@ -6,13 +6,16 @@
             <div class="main-screen__body">
                 <h1 class="main-screen__title">
                     <span class="main-screen__title-accent">Lorem</span> 
+<!--                     тут что-то типо модификатора, но без класса это не правильно - как вариант сделать отдельный класс блока для цвета типо .title-accent  -->
                         ipsum dolor sit <br> amet consectetur 
                     <span class="main-screen__title-accent">adipiscing</span>
                 </h1>
 
                 <div class="main-screen__wrap">
                     <div class="main-screen__wrap-title">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
+<!--                   тут и ниже как будто бы main-screen__wrap жто блок и ты от него наследуешься, но это элемент по этому давай тут лучше заменим на .main-screen__subtitle -->
                     <ul class="main-screen__wrap-list">
+<!--                         тут так же .main-screen__list переделать li-шки ниже -->
                         <li class="main-screen__wrap-element">Totam rem aperiam eaque ipsa</li>
                         <li class="main-screen__wrap-element">Sit voluptatem accusantium doloremque laudantium</li>
                         <li class="main-screen__wrap-element">Sed ut perspiciatis, unde omnis iste natus error</li>
@@ -46,7 +49,9 @@
             </div>
     
             <div class="main-form__features">
+<!--                 добавим класс блока и от него все пойдет ниже .class="main-form__features main-form-features" -->
                 <div class="main-form__features-item">
+<!--                     ну и соответсвенно тут уже будет от блока идти все нейминги  main-form-features__item-->
                     <div class="main-form__features-circle">
                         <img class="main-form__features-icon" src="./images/icons/magnifier.svg" alt="magnifier">
                         <div class="dots">
