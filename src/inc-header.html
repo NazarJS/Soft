@@ -9,7 +9,8 @@
   <meta name="format-detection" content="telephone=no" />
 
   <title>SoftCorp</title>
-  <!-- <link rel="icon" href="./images/favicon.svg"> -->
+<!--? не забудь удалить    -->
+<!--   <link rel="icon" href="./images/favicon.svg"> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,26 +21,27 @@
 <body>
 
 <header class="header" id="header">
-      <div class="container">
+      <div class="container"> 
+        <!--   На сколько я вижу у тебя container везде написан, а зачем? ты же можешь его открыть в хедере и закрыть в футере -->
         <div class="header__container">
             <div class="header__logo">
+        <!--    А для чего див с header__logo? -->
               <a href="http://biggiko/dist/" class="header__logo-image">
                 <img class="logo" src="./images/logo.png" alt="alt">
               </a>
             </div>
 
             <div class="menu">
+        <!--    Раз у тебя это header то давай лучше header-menu и дальше по коду от этого блока иди -->
               <ul class="menu__list">
                 <li class="menu__element">
                   <a href="#" class="menu__link">Бизнес</a>
                 </li>
                 <li class="menu__element">
                   <a href="#" class="menu__link">О нас</a>
-                  
                 </li>
                 <li class="menu__element">
                   <a href="#" class="menu__link">Цены</a>
-                  
                 </li>
                 <li class="menu__element">
                   <a href="#" class="menu__link">Оформить заказ</a>
@@ -48,7 +50,9 @@
             </div>
 
             <div class="header__burger" id="burger">
+<!--               добавь сюда калсс блока class="header__burger header-burger" -->
               <div class="header__burger-line"></div>
+<!--           а тут как раз получиться у тебя header-burger__line     -->
             </div>
         </div>
       </div>
