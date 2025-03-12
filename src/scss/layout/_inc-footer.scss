@@ -7,16 +7,31 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width:1024px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__privacy {
         font-size: 13px;
         color: #fff;
+
+        @media(max-width:1024px){
+            margin-bottom: 16px;
+        }
     }
 
     &__payments{
         display: flex;
         justify-content: space-between;
+
+        @media(max-width:1024px){
+           margin-bottom: 8px;
+           flex-wrap: wrap;
+           justify-content: unset;
+        }
 
         &-item {
             display: flex;
@@ -26,6 +41,10 @@
             color: #C3C3C3;
             white-space: nowrap;
             line-height: 0;
+
+            @media(max-width:1024px){
+                margin-bottom: 8px;
+            }
 
             &:last-child{
                 margin-right: 0;
@@ -41,13 +60,20 @@
         display: flex;
         align-items: center;
 
+        @media(max-width:1024px){
+            flex-wrap: wrap; 
+         }
+
         &-item{
             display: flex;
             align-items: center;
             font-size: 13px;
             color: #fff;
-            line-height: 0;
             transition: .3s;
+
+            @media(max-width:1024px){
+                margin-bottom: 8px;
+            }
 
             &:hover {
                 color: #43ABF0;
@@ -63,7 +89,11 @@
         }
     }
 
-    .space{
+    &__space {
         color: #C3C3C3;
+
+        @media(max-width:1024px){
+            display: none;
+        }
     }
 }
